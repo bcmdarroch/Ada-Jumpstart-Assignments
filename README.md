@@ -1,2 +1,2 @@
-# candy.rb
-Vending Machine program I made for chapter 10 of Ada Academy's Jumpstart
+# Ada-Jumpstart-Assignments
+Uploads of the assignments I completed using the self-paced Ada Academy Jumpstart lesson guide
