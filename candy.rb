@@ -17,9 +17,9 @@ puts "So, What'll ya have? Type the letter of the candy you would like and press
 
 choice = gets.chomp
 
-if choice == "A" || choice == "a" || choice == "B" || choice == "b" || choice == "C" || choice == "c" || choice == "D" || choice == "d" || choice == "E" || choice == "e"
+if choice.downcase == "a" || choice == "b" || choice == "c" || choice == "d" || choice == "e"
 	
-	if choice == "A" || choice == "a"
+	if choice.downcase == "a"
 		if response >= 0.65
 			print "Here is your gummy worms and your change of $"
 			puts "%.2f" % (response-0.65)
@@ -27,15 +27,15 @@ if choice == "A" || choice == "a" || choice == "B" || choice == "b" || choice ==
 			puts "Sorry, you don't have enough money."
 		end
 
-	elsif choice == "B" || choice == "b"
+	elsif choice.downcase == "b"
 		if response >= 0.50
-			print "Here are your chips and your change of $" 
+			print "Here are your skittles and your change of $" 
 			puts "%.2f" % (response-0.50)
 		else 
 			puts "Sorry, you don't have enough bucks."
 		end
 
-	elsif choice == "C" || choice == "c" 
+	elsif choice.downcase == "c" 
 		if response >= 0.75
 			print "Here is your nutter butter and your change of $"
 			puts "%.2f" % (response-0.75)
@@ -43,7 +43,7 @@ if choice == "A" || choice == "a" || choice == "B" || choice == "b" || choice ==
 			puts "Sorry, you don't have enough of dat green."
 		end
 
-	elsif choice == "D" || choice == "d" 
+	elsif choice.downcase == "d"
 		if response >= 0.65
 			print "Here is your peanut butter cup and your change of $"
 			puts "%.2f" % (response-0.65)
@@ -51,9 +51,9 @@ if choice == "A" || choice == "a" || choice == "B" || choice == "b" || choice ==
 			puts "Sorry, you don't have enough dough."
 		end
 
-	elsif choice == "E" || choice == "e" 
+	elsif choice.downcase == "e" 
 		if response >= 0.55
-			print "Here is your juicy fruit gum and your change of $"
+			print "Here are your cookies and your change of $"
 			puts "%.2f" % (response-0.55)
 		else 
 			puts "Sorry, you don't have enough moolah."
